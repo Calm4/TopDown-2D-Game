@@ -1,51 +1,84 @@
-using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UIElements;
 
-[RequireComponent(typeof(Rigidbody2D))]
-
-public class Character2DTopDown : MonoBehaviour
+public class Player : MonoBehaviour
 {
+    public float speed = 5f;
+    private new Rigidbody2D rigidbody;
+    public float health = 10;
 
-    public float speed = 1.5f;
-    public float acceleration = 100;
+    private Vector2 moveInput;
+    private Vector2 moveVelocity;
+    private Animator animator;
 
-    private Vector3 direction;
-    private Rigidbody2D body;
+    public GameObject Sword;
+    public GameObject Gun;
+
+    private bool facingRight = true;
+
 
     void Start()
     {
-        body = GetComponent<Rigidbody2D>();
-        body.freezeRotation = true;
-        body.gravityScale = 0;
+        rigidbody = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
-
-    void FixedUpdate()
-    {
-        body.AddForce(direction * body.mass * speed * acceleration);
-
-        if (Mathf.Abs(body.velocity.x) > speed)
-        {
-            body.velocity = new Vector2(Mathf.Sign(body.velocity.x) * speed, body.velocity.y);
-        }
-
-        if (Mathf.Abs(body.velocity.y) > speed)
-        {
-            body.velocity = new Vector2(body.velocity.x, Mathf.Sign(body.velocity.y) * speed);
-        }
-    }
-
-    void LookAtCursor()
-    {
-        Vector3 lookPos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.transform.position.z));
-        lookPos = lookPos - transform.position;
-        float angle = Mathf.Atan2(lookPos.y, lookPos.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-    }
-
+    // Update is called once per frame
     void Update()
     {
-        direction = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
 
-        LookAtCursor();
+        moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+
+        moveVelocity = moveInput.normalized * speed;
+        if (!facingRight && moveInput.x > 0)
+        {
+            Flip();
+        }
+        else if (facingRight && moveInput.x < 0)
+        {
+            Flip();
+        }
+       /* Animations();*/
+
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
+
+    private void FixedUpdate()
+    {
+        rigidbody.MovePosition(rigidbody.position + moveVelocity * Time.fixedDeltaTime);
+    }
+   /* public void Animations()
+    {
+        if (moveInput.magnitude == 0)
+        {
+            animator.SetBool("isWalk", false);
+        }
+        else
+        {
+            animator.SetBool("isWalk", true);
+            if (Input.GetKey(KeyCode.LeftShift) == true)
+            {
+                animator.SetBool("isRunning", true);
+            }
+            else
+            {
+                animator.SetBool("isRunning", false);
+            }
+        }
+
+    }*/
+
+
+    private void Flip()
+    {
+        facingRight = !facingRight;
+        Vector3 Scaler = transform.localScale;
+        Scaler.x *= -1;
+        transform.localScale = Scaler;
+    }
+
 }
