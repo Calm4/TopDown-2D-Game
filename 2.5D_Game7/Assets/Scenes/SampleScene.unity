@@ -7023,8 +7023,8 @@ Tilemap:
   - first: {x: -2, y: -6, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 1
-      m_TileSpriteIndex: 0
+      m_TileIndex: 2
+      m_TileSpriteIndex: 1
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -7033,8 +7033,8 @@ Tilemap:
   - first: {x: -1, y: -6, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 1
-      m_TileSpriteIndex: 0
+      m_TileIndex: 2
+      m_TileSpriteIndex: 1
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -7043,8 +7043,8 @@ Tilemap:
   - first: {x: 0, y: -6, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 1
-      m_TileSpriteIndex: 0
+      m_TileIndex: 2
+      m_TileSpriteIndex: 1
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -7053,8 +7053,8 @@ Tilemap:
   - first: {x: 1, y: -6, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 1
-      m_TileSpriteIndex: 0
+      m_TileIndex: 2
+      m_TileSpriteIndex: 1
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -17574,14 +17574,14 @@ Tilemap:
   m_TileAssetArray:
   - m_RefCount: 480
     m_Data: {fileID: 11400000, guid: ef827edcb178d7c4ab3e172763d75cad, type: 2}
-  - m_RefCount: 1024
+  - m_RefCount: 1020
     m_Data: {fileID: 11400000, guid: b764618625a46004bbcb31d8a85950aa, type: 2}
-  - m_RefCount: 1
+  - m_RefCount: 5
     m_Data: {fileID: 11400000, guid: 7a4098ab50d9be949b92aeba130a94c3, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 1024
+  - m_RefCount: 1020
     m_Data: {fileID: 1387308056, guid: edec08703d6447c4eb3d458e41a73053, type: 3}
-  - m_RefCount: 1
+  - m_RefCount: 5
     m_Data: {fileID: -738472735, guid: 94c622812ee2f7044bded35d1d46b2d4, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 1505
@@ -17856,7 +17856,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: -118896623, guid: 00a3470f1f32e9645a130d7263e21e7b, type: 3}
+  m_Sprite: {fileID: 1946950296, guid: 476284c392203a84ab34cd07a54d59cf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
