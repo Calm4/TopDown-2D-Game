@@ -1,84 +1,102 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UIElements;
+//using System.Collections;
+//using System.Collections.Generic;
+//using UnityEngine;
+//using UnityEngine.UIElements;
 
-public class Player : MonoBehaviour
-{
-    public float speed = 5f;
-    private new Rigidbody2D rigidbody;
-    public float health = 10;
+//public class Player : MonoBehaviour
+//{
+//    public float speed;
+//    private Vector2 direction;
+//    private Rigidbody2D rb;
 
-    private Vector2 moveInput;
-    private Vector2 moveVelocity;
-    private Animator animator;
+//    private void Start()
+//    {
+//        rb = GetComponent<Rigidbody2D>();
+//    }
+//    private void Update()
+//    {
+//        direction.x = Input.GetAxisRaw("Horizontal");
+//        direction.y = Input.GetAxisRaw("Verticle");
+//    }
 
-    public GameObject Sword;
-    public GameObject Gun;
+//    private void FixedUpdate()
+//    {
+//        rb.MovePosition(rb.position + direction * speed * Time.fixedDeltaTime);
+//    }
+//}
 
-    private bool facingRight = true;
+//// public float speed = 5f;
+//// private new Rigidbody2D rigidbody;
+//// public float health = 10;
 
+//// private Vector2 moveInput;
+//// private Vector2 moveVelocity;
+//// private Animator animator;
 
-    void Start()
-    {
-        rigidbody = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
-    }
-    // Update is called once per frame
-    void Update()
-    {
+//// public GameObject Sword;
+//// public GameObject Gun;
 
-        moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-
-        moveVelocity = moveInput.normalized * speed;
-        if (!facingRight && moveInput.x > 0)
-        {
-            Flip();
-        }
-        else if (facingRight && moveInput.x < 0)
-        {
-            Flip();
-        }
-       /* Animations();*/
-
-        if (health <= 0)
-        {
-            Destroy(gameObject);
-        }
-    }
-
-    private void FixedUpdate()
-    {
-        rigidbody.MovePosition(rigidbody.position + moveVelocity * Time.fixedDeltaTime);
-    }
-   /* public void Animations()
-    {
-        if (moveInput.magnitude == 0)
-        {
-            animator.SetBool("isWalk", false);
-        }
-        else
-        {
-            animator.SetBool("isWalk", true);
-            if (Input.GetKey(KeyCode.LeftShift) == true)
-            {
-                animator.SetBool("isRunning", true);
-            }
-            else
-            {
-                animator.SetBool("isRunning", false);
-            }
-        }
-
-    }*/
+//// private bool facingRight = true;
 
 
-    private void Flip()
-    {
-        facingRight = !facingRight;
-        Vector3 Scaler = transform.localScale;
-        Scaler.x *= -1;
-        transform.localScale = Scaler;
-    }
+//// void Start()
+//// {
+////     rigidbody = GetComponent<Rigidbody2D>();
+////     animator = GetComponent<Animator>();
+//// }
+//// // Update is called once per frame
+//// void Update()
+//// {
 
-}
+////     moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+
+////     moveVelocity = moveInput.normalized * speed;
+////     if (!facingRight && moveInput.x > 0)
+////     {
+////         Flip();
+////     }
+////     else if (facingRight && moveInput.x < 0)
+////     {
+////         Flip();
+////     }
+////    /* Animations();*/
+
+////     if (health <= 0)
+////     {
+////         Destroy(gameObject);
+////     }
+//// }
+
+//// private void FixedUpdate()
+//// {
+////     rigidbody.MovePosition(rigidbody.position + moveVelocity * Time.fixedDeltaTime);
+//// }
+/////* public void Animations()
+//// {
+////     if (moveInput.magnitude == 0)
+////     {
+////         animator.SetBool("isWalk", false);
+////     }
+////     else
+////     {
+////         animator.SetBool("isWalk", true);
+////         if (Input.GetKey(KeyCode.LeftShift) == true)
+////         {
+////             animator.SetBool("isRunning", true);
+////         }
+////         else
+////         {
+////             animator.SetBool("isRunning", false);
+////         }
+////     }
+
+//// }*/
+
+
+//// private void Flip()
+//// {
+////     facingRight = !facingRight;
+////     Vector3 Scaler = transform.localScale;
+////     Scaler.x *= -1;
+////     transform.localScale = Scaler;
+//// }
