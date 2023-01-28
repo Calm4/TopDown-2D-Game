@@ -6,6 +6,7 @@ using UnityEngine.UIElements;
 public class PlayerMovement : MonoBehaviour
 {  
     public Animator animator;
+    public Animation animation;
     private float speed = 3.5f;
 
     void FixedUpdate()
@@ -21,11 +22,16 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Wall")
-        {
-            print("AYAYA");
-
-        }
+        //if (collision.gameObject.tag == "Wall")
+        //{
+        //    animator.SetTrigger("PlayIdle");
+            
+        //}
+        //else
+        //{
+        //    animator.ResetTrigger("PlayIdle");
+        //}
+            
     }
 
     //private void OnTriggerEnter2D(Collision2D collision)

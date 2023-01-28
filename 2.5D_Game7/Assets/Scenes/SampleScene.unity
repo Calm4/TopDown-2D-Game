@@ -214,6 +214,16 @@ Tilemap:
   m_GameObject: {fileID: 336721093}
   m_Enabled: 1
   m_Tiles:
+  - first: {x: 3, y: -13, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 23
+      m_TileSpriteIndex: 18
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: 8, y: -13, z: 0}
     second:
       serializedVersion: 2
@@ -2302,8 +2312,8 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: 8f51f5d10900ec943b969a4acb716416, type: 2}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 14f007504a9b02848b081398525ef27c, type: 2}
   - m_RefCount: 6
     m_Data: {fileID: 11400000, guid: 7ddfa15491d96fa4caef1759aa10a1db, type: 2}
   - m_RefCount: 6
@@ -2351,8 +2361,10 @@ Tilemap:
     m_Data: {fileID: 1319353025, guid: 94c622812ee2f7044bded35d1d46b2d4, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 779562318, guid: 94c622812ee2f7044bded35d1d46b2d4, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: -75126634, guid: 94c622812ee2f7044bded35d1d46b2d4, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 204
+  - m_RefCount: 205
     m_Data:
       e00: 1
       e01: 0
@@ -2371,7 +2383,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 204
+  - m_RefCount: 205
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -34541,6 +34553,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 705437504}
+  animation: {fileID: 0}
 --- !u!50 &705437501
 Rigidbody2D:
   serializedVersion: 4
@@ -34764,7 +34777,7 @@ GameObject:
   - component: {fileID: 1227471212}
   m_Layer: 0
   m_Name: GameObject
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36634,7 +36647,7 @@ GameObject:
   - component: {fileID: 1938508528}
   m_Layer: 0
   m_Name: GameObject (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
