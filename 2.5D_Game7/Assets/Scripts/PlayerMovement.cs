@@ -19,7 +19,23 @@ public class PlayerMovement : MonoBehaviour
         transform.position = transform.position + movement * Time.deltaTime * speed;
     }
 
-    
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Wall")
+        {
+            print("AYAYA");
+        }
+    }
+
+    //private void OnTriggerEnter2D(Collision2D collision)
+    //{
+    //    if (collision.gameObject.tag == "Wall")
+    //    {
+
+    //    }
+    //}
+
+
 }
 
 // public float speed = 5f;
