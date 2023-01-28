@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.tag == "Wall")
         {
-            print("AYAYA");
+            
         }
     }
 
