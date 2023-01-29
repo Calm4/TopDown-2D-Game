@@ -7,11 +7,13 @@ public class PlayerMovement : MonoBehaviour
 {  
     public Animator animator;
     public Animation animation;
+    public GameObject crossHair;
     private float speed = 3.5f;
-
+    Vector3 movement;
+    
     void FixedUpdate()
     {
-        Vector3 movement = new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"), 0.0f);
+        movement = new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"), 0.0f);
         movement.Normalize();
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
@@ -20,19 +22,36 @@ public class PlayerMovement : MonoBehaviour
         transform.position = transform.position + movement * Time.deltaTime * speed;
     }
 
-    private void OnCollisionStay2D(Collision2D collision)
+   /* private void OnCollisionStay2D(Collision2D collision)
     {
+        if (collision.gameObject.tag == "Wall")
+        {
+            if (movement.magnitude != 0)
+            {
+                animator.SetBool("isIdle", true);
+
+            }
+            
+        }
+        if (collision.gameObject.tag != "Wall")
+        {
+
+            animator.SetBool("isIdle", false);
+
+
+        }
+      
         //if (collision.gameObject.tag == "Wall")
         //{
         //    animator.SetTrigger("PlayIdle");
-            
+
         //}
         //else
         //{
         //    animator.ResetTrigger("PlayIdle");
         //}
-            
-    }
+
+    }*/
 
     //private void OnTriggerEnter2D(Collision2D collision)
     //{
