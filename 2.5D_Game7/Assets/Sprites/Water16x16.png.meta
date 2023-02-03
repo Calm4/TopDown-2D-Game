@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c88893a9ca5f49347beb84d29b38ae00
+guid: 904b92f5c52872c4595c800f88086e1b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fences_0
+      name: Water16x16_0
       rect:
         serializedVersion: 2
         x: 0
@@ -113,28 +113,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: 3, y: -5}
-        - {x: 5, y: -5}
-        - {x: 5, y: 2}
-        - {x: -4, y: 2}
-        - {x: -4, y: -5}
-        - {x: -2, y: -5}
-        - {x: -2, y: -8}
-        - {x: 3, y: -8}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f73706c477d39154f966de906027a6ad
-      internalID: 1083120809
+      spriteID: a72173ac71f182c40bc9a23f0126b72c
+      internalID: -378794227
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fences_1
+      name: Water16x16_1
       rect:
         serializedVersion: 2
         x: 16
@@ -142,26 +134,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: 8, y: 2}
-        - {x: -2, y: 2}
-        - {x: -2, y: -8}
-        - {x: 3, y: -8}
-        - {x: 3, y: -4}
-        - {x: 8, y: -4}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c5618264a06ae24d8a57753b06e842e
-      internalID: -1322789641
+      spriteID: b33aea1b8122dfd4fac6a35c679a3765
+      internalID: -1366859918
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fences_2
+      name: Water16x16_2
       rect:
         serializedVersion: 2
         x: 32
@@ -169,28 +155,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -8, y: 2}
-        - {x: -8, y: -4}
-        - {x: -2, y: -4}
-        - {x: -2, y: -8}
-        - {x: 3, y: -8}
-        - {x: 3, y: -4}
-        - {x: 8, y: -4}
-        - {x: 8, y: 2}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 400b928fd50f30646995da9b6fd916f0
-      internalID: -159784687
+      spriteID: c0f6f15f5a1d86540ab673df3891e35e
+      internalID: -63990526
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fences_3
+      name: Water16x16_3
       rect:
         serializedVersion: 2
         x: 48
@@ -198,28 +176,41 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -4, y: 2}
-        - {x: -8, y: 2}
-        - {x: -8, y: -4}
-        - {x: -2, y: -4}
-        - {x: -2, y: -8}
-        - {x: 3, y: -8}
-        - {x: 3, y: -4}
-        - {x: 3, y: 2}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5541ca5215b257408a759407c7c04fd
-      internalID: 202595015
+      spriteID: 17cdf7552227277408facfbb83da277d
+      internalID: 1944938703
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fences_4
+      name: Water16x16_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33d87465f694b6845ac262c785d06bc6
+      internalID: 1399327041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water16x16_5
       rect:
         serializedVersion: 2
         x: 0
@@ -227,32 +218,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: 3, y: 8}
-        - {x: -2, y: 8}
-        - {x: -2, y: 0}
-        - {x: -4, y: 0}
-        - {x: -4, y: -5}
-        - {x: -2, y: -4.951805}
-        - {x: -2, y: -8}
-        - {x: 3, y: -8}
-        - {x: 3, y: -5}
-        - {x: 5, y: -5}
-        - {x: 5, y: 0}
-        - {x: 3, y: 0}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74264330330626b49875879646de3e5e
-      internalID: 872114281
+      spriteID: beabc2049c0f4ec4e93bfa466c49c7c3
+      internalID: -2038326026
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fences_5
+      name: Water16x16_6
       rect:
         serializedVersion: 2
         x: 16
@@ -260,28 +239,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -2, y: 8}
-        - {x: -2, y: -8}
-        - {x: 3, y: -8}
-        - {x: 3, y: -4}
-        - {x: 8, y: -4}
-        - {x: 8, y: 2}
-        - {x: 3, y: 2}
-        - {x: 3, y: 8}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0fcea996251ba8647a00f1d4f3df83cd
-      internalID: -1682188026
+      spriteID: a5edc55eef6cc4649aca5fd752d6a23c
+      internalID: -136684172
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fences_6
+      name: Water16x16_7
       rect:
         serializedVersion: 2
         x: 32
@@ -289,32 +260,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: 3, y: 8}
-        - {x: -2, y: 8}
-        - {x: -2, y: 2}
-        - {x: -8, y: 2}
-        - {x: -8, y: -4}
-        - {x: -2, y: -4}
-        - {x: -2, y: -8}
-        - {x: 3, y: -8}
-        - {x: 3, y: -4}
-        - {x: 8, y: -4}
-        - {x: 8, y: 2}
-        - {x: 3, y: 2}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41c2d2bcca6a945479bacc3bd4409259
-      internalID: -1756124578
+      spriteID: b846f7b1ad5e4344aba1c128cbc54bfb
+      internalID: 1074704467
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fences_7
+      name: Water16x16_8
       rect:
         serializedVersion: 2
         x: 48
@@ -322,29 +281,41 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -2, y: 8}
-        - {x: -2, y: 2}
-        - {x: -8, y: 2}
-        - {x: -8, y: -4}
-        - {x: -2, y: -4}
-        - {x: -2, y: -8}
-        - {x: 3, y: -8}
-        - {x: 3, y: 2}
-        - {x: 3, y: 8}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09c8b0a40eb05d644a291b71e1645711
-      internalID: 1175218778
+      spriteID: 0acaca43140326146bce9605d459f5a1
+      internalID: -641575726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fences_8
+      name: Water16x16_9
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6278e92f390709a4f8fab8285273472b
+      internalID: -1004742277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water16x16_10
       rect:
         serializedVersion: 2
         x: 0
@@ -352,28 +323,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: 3, y: 1}
-        - {x: 3, y: 8}
-        - {x: -2, y: 8}
-        - {x: -2, y: 1}
-        - {x: -4, y: 1}
-        - {x: -4, y: -6}
-        - {x: 5, y: -6}
-        - {x: 5, y: 1}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7524486957a898a48879881cda173026
-      internalID: -768741989
+      spriteID: 880f4264cb8a9754cb99e6a892bf597b
+      internalID: -237935951
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fences_9
+      name: Water16x16_11
       rect:
         serializedVersion: 2
         x: 16
@@ -381,26 +344,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -2, y: 8}
-        - {x: -2, y: -4}
-        - {x: 8, y: -4}
-        - {x: 8, y: 2}
-        - {x: 3, y: 2}
-        - {x: 3, y: 8}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c688f802c8aeae4ab449e4ac57d3d28
-      internalID: 2136823076
+      spriteID: 682a9988d764a50448c4cad30999ad38
+      internalID: -333678361
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fences_10
+      name: Water16x16_12
       rect:
         serializedVersion: 2
         x: 32
@@ -408,28 +365,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -2, y: 2}
-        - {x: -8, y: 2}
-        - {x: -8, y: -4}
-        - {x: 8, y: -4}
-        - {x: 8, y: 2}
-        - {x: 3, y: 2}
-        - {x: 3, y: 8}
-        - {x: -2, y: 8}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 572dc722b3a8b504f9f972733a9e297d
-      internalID: 404084122
+      spriteID: 4ed81fdd093435047ac590660f7daece
+      internalID: -505593
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fences_11
+      name: Water16x16_13
       rect:
         serializedVersion: 2
         x: 48
@@ -437,26 +386,41 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -2, y: 8}
-        - {x: -2, y: 2}
-        - {x: -8, y: 2}
-        - {x: -8, y: -4}
-        - {x: 3, y: -4}
-        - {x: 3, y: 8}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22699259690effb4596c2306dc01a434
-      internalID: 1242857176
+      spriteID: b375f485b2193324195b4e7ace2c8d88
+      internalID: 1245642941
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fences_12
+      name: Water16x16_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1c0e4e1c5bd9b446a8701326833bcaf
+      internalID: -1687283811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water16x16_15
       rect:
         serializedVersion: 2
         x: 0
@@ -464,24 +428,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -4, y: 2}
-        - {x: -4, y: -6}
-        - {x: 5, y: -6}
-        - {x: 5, y: 2}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88dd7f434955daa468aef358e060b346
-      internalID: -1211288756
+      spriteID: 2f0254d4a4776b54d871357caef6dd26
+      internalID: -1048212925
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fences_13
+      name: Water16x16_16
       rect:
         serializedVersion: 2
         x: 16
@@ -489,87 +449,14 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -4, y: 2}
-        - {x: -4, y: -4}
-        - {x: -3, y: -4}
-        - {x: -3, y: -6}
-        - {x: 4, y: -6}
-        - {x: 4, y: -4}
-        - {x: 8, y: -4}
-        - {x: 8, y: 2}
-      - - {x: 8, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: 8}
-        - {x: 8, y: 8}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b3c3688b5635e14686e19c65f76fe27
-      internalID: 902105899
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fences_14
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -5, y: 2}
-        - {x: -8, y: 2}
-        - {x: -8, y: -4}
-        - {x: -3, y: -4}
-        - {x: -3, y: -6}
-        - {x: 4, y: -6}
-        - {x: 4, y: -4}
-        - {x: 8, y: -4}
-        - {x: 8, y: 2}
-        - {x: 5, y: 2}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 22c8bf16006579b408d52c4cdc89d622
-      internalID: -151120249
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fences_15
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 2}
-        - {x: -8, y: -4}
-        - {x: -3, y: -4}
-        - {x: -3, y: -6}
-        - {x: 4, y: -6}
-        - {x: 4, y: -4}
-        - {x: 5, y: -4}
-        - {x: 5, y: 2}
-        - {x: -8, y: 2}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 65ae42e14abef1b4bbfbd59a3479813d
-      internalID: 1018444470
+      spriteID: 1400dea7bee22b44e9b0dd95e94d3d5d
+      internalID: 1936223278
       vertices: []
       indices: 
       edges: []
@@ -585,22 +472,23 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      fences_2: -159784687
-      fences_4: 872114281
-      fences_7: 1175218778
-      fences_11: 1242857176
-      fences_5: -1682188026
-      fences_6: -1756124578
-      fences_1: -1322789641
-      fences_13: 902105899
-      fences_10: 404084122
-      fences_0: 1083120809
-      fences_3: 202595015
-      fences_15: 1018444470
-      fences_8: -768741989
-      fences_14: -151120249
-      fences_12: -1211288756
-      fences_9: 2136823076
+      Water16x16_1: -1366859918
+      Water16x16_4: 1399327041
+      Water16x16_16: 1936223278
+      Water16x16_6: -136684172
+      Water16x16_15: -1048212925
+      Water16x16_14: -1687283811
+      Water16x16_7: 1074704467
+      Water16x16_8: -641575726
+      Water16x16_13: 1245642941
+      Water16x16_12: -505593
+      Water16x16_2: -63990526
+      Water16x16_3: 1944938703
+      Water16x16_11: -333678361
+      Water16x16_9: -1004742277
+      Water16x16_10: -237935951
+      Water16x16_5: -2038326026
+      Water16x16_0: -378794227
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

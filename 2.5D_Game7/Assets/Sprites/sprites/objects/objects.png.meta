@@ -808,12 +808,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      objects_127: 183977964
       objects_118: 2050789097
       objects_98: -4001832
       objects_44: -661258584
       objects_78: 2032407490
       objects_145: -686237826
+      objects_20: -1428926364
       objects_156: -86981516
       objects_83: 1385661938
       objects_116: 2045879108
@@ -1014,7 +1014,7 @@ TextureImporter:
       objects_88: 1133449197
       objects_178: 477661437
       objects_4: -1148698717
-      objects_20: -1428926364
+      objects_127: 183977964
       objects_128: -1242250753
   spritePackingTag: 
   pSDRemoveMatte: 0
