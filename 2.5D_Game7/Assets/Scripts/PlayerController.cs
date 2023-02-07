@@ -1,99 +1,80 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
-
+// Takes and handles input and movement for a player character
 public class PlayerController : MonoBehaviour
 {
-    public Rigidbody2D rigidbody;   
-    public Animator animator;
+    public float moveSpeed = 100f;
+    public float collisionOffset = 0.05f;
+    public ContactFilter2D movementFilter;
+    public SwordAttack swordAttack;
 
-    public float moveSpeed = 1f;
+    Vector2 movementInput;
+    SpriteRenderer spriteRenderer;
+    Rigidbody2D rb;
+    Animator animator;
+    List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
 
-    public float x;
-    public float y;
+    bool canMove = true;
+    public float x, y;
     private bool isWalking;
 
-    //public float collisionOffset = 0.05f;
-    //Vector2 movementInput;
-    private Vector2 moveDirection;
-
-
-
-    private void Start()
+    // Start is called before the first frame update
+    void Start()
     {
-        rigidbody = GetComponent<Rigidbody2D>();
-    }
-
-    private void Update()
-    {
-        GetInput();
-        Animations();
-
+        rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
     private void FixedUpdate()
     {
-        rigidbody.velocity = moveDirection * moveSpeed;
+        rb.velocity = movementInput * moveSpeed * Time.fixedDeltaTime;
     }
-    private void GetInput()
+    private void Update()
     {
-        x = Input.GetAxisRaw("Horizontal");
-        y = Input.GetAxisRaw("Vertical");
+        if (canMove)
+        {
+            x = Input.GetAxisRaw("Horizontal");
+            y = Input.GetAxisRaw("Vertical");
 
-        moveDirection = new Vector2(x, y);
-        moveDirection.Normalize();
-    }
-    void Animations()
-    {
-        if (moveDirection.magnitude > 0.1f || moveDirection.magnitude < -0.1f)
-        {
-            isWalking = true;
-        }
-        else
-        {
-            isWalking = false;
-        }
-
-        if (isWalking)
-        {
-            animator.SetFloat("X", x);
-            animator.SetFloat("Y", y);
-        }
-        animator.SetBool("isMoving",isWalking);
-    }
-    void StopMoving()
-    {
-        rigidbody.velocity = new Vector2(0, 0);
-    }
-    // Проверка которая позволяет сразу нажимать к примеру A и W что бы перс двигался а не замирал и упирался в стену  
-    /*void StabilizationMovementDiagonally()
-    {
-        if (movementInput != Vector2.zero)
-        {
-            bool success = TryMove(movementInput);
-            if (!success)
+            if (x != 0 || y != 0)
             {
-                success = TryMove(new Vector2(movementInput.x, 0));
-                if (!success)
+                animator.SetFloat("X", x);
+                animator.SetFloat("Y", y);
+                if (!isWalking)
                 {
-                    success = TryMove(new Vector2(0, movementInput.y));
+                    isWalking = true;
+                    animator.SetBool("isMoving",isWalking);
+                }
+
+            }
+            else
+            {
+                if (isWalking)
+                {
+                    isWalking = false;
+                    animator.SetBool("isMoving", isWalking);
+                    
                 }
             }
         }
+        movementInput = new Vector3(x,y).normalized;
     }
-    private bool TryMove(Vector2 direction)
+  
+    void OnFire()
     {
-        int count = rigidbody.Cast(direction, movementFilter, castCollision, moveSpeed * Time.fixedDeltaTime + collisionOffset);
+        animator.SetTrigger("swordAttack");
+    }
 
-        if (count == 0)
-        {
-            rigidbody.MovePosition(rigidbody.position + direction * moveSpeed * Time.fixedDeltaTime);
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-    }*/
+    public void LockMovement()
+    {
+        canMove = false;
+    }
 
+    public void UnlockMovement()
+    {
+        canMove = true;
+    }
 }
