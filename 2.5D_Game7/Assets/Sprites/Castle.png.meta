@@ -954,174 +954,6 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Castle_38
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 112
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5a257461007812a4ebdebfd0afbcd58e
-      internalID: -1865312179
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Castle_39
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 112
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6189e4919052d4e46a75a21759c74301
-      internalID: -2097144388
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Castle_40
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 112
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7125c8cecf4775149b10b4c9061f5cf0
-      internalID: 924553290
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Castle_41
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 96
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 884719690f760b045b9f662aeb830856
-      internalID: 1078845719
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Castle_42
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 96
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a69a7ef184e0c784196f1719b528ff46
-      internalID: 763839948
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Castle_43
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 96
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e7a3c3f9ee8181346aadfba92851a552
-      internalID: -1344417676
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Castle_44
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 112
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e9c702da78612594784afd37e2622301
-      internalID: 381921068
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Castle_45
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 96
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e03a31607ac5e074491f4a64df4268b5
-      internalID: -56622520
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1133,51 +965,43 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Castle_31: 1000397008
       Castle_17: -1842360729
       Castle_8: 494636673
       Castle_1: -2101932895
       Castle_32: -1286927148
+      Castle_22: 1592447373
+      Castle_10: 251233565
+      Castle_11: 1058009859
       Castle_19: 1194453184
-      Castle_39: -2097144388
-      Castle_42: 763839948
+      Castle_28: -1398112
+      Castle_35: 895823360
       Castle_23: 356964766
+      Castle_25: -744020842
       Castle_3: -1918736469
+      Castle_7: 1825988146
       Castle_33: 1387308056
       Castle_29: -987273672
       Castle_36: 1195711449
       Castle_21: 476526246
       Castle_15: 431239844
+      Castle_16: 306334177
       Castle_12: -1872027744
       Castle_4: -323424500
       Castle_9: 1215579833
-      Castle_43: -1344417676
+      Castle_18: -50940310
       Castle_6: 1075506224
       Castle_5: 610919183
-      Castle_27: 1635791670
-      Castle_34: 1396360621
-      Castle_26: -2044794762
-      Castle_14: -568830587
-      Castle_37: -581876470
-      Castle_24: 589585930
-      Castle_31: 1000397008
-      Castle_40: 924553290
-      Castle_22: 1592447373
-      Castle_10: 251233565
-      Castle_11: 1058009859
-      Castle_28: -1398112
-      Castle_44: 381921068
-      Castle_35: 895823360
-      Castle_38: -1865312179
-      Castle_25: -744020842
-      Castle_45: -56622520
-      Castle_7: 1825988146
-      Castle_41: 1078845719
-      Castle_16: 306334177
-      Castle_18: -50940310
       Castle_2: 1820288246
+      Castle_27: 1635791670
       Castle_13: -1990028359
+      Castle_26: -2044794762
+      Castle_34: 1396360621
+      Castle_14: -568830587
       Castle_20: 2064633243
+      Castle_37: -581876470
       Castle_0: 145526301
+      Castle_24: 589585930
       Castle_30: -1574789518
   spritePackingTag: 
   pSDRemoveMatte: 0
